@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1); 
+    filter: blur(100px); 
+}
+
+.circle1 {
+    width: 400px;
+    height: 400px;
+    top: -50px;
+    left: -50px;
+}
+
+.circle2 {
+    width: 300px;
+    height: 300px;
+    bottom: -80px;
+    right: -60px;
+}
+
+.circle3 {
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.15;
+}
+
+.login-container {
+    width: 350px;
+    padding: 30px;
+    background: linear-gradient(145deg, #fefefe, #e0e0e0); 
+    border: 2px solid #b0c4de; 
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    z-index: 1; 
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #d1d1d1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #a0a0a0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5dbb63;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #489e4a;
+}
+
+button:disabled {
+    background-color: #9ac89c;
+    cursor: not-allowed;
+}
+
+.hello-btn {
+    background-color: #17a2b8;
+}
+
+.hello-btn:hover {
+    background-color: #138496;
+}
+
+.logout-btn {
+    margin-top: 20px;
+    background-color: #ff6b6b;
+}
+
+.logout-btn:hover {
+    background-color: #e85858;
+}
